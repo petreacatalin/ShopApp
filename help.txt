@@ -1,0 +1,10 @@
+Add migrare :
+    dotnet ef migrations add InitialCreate -p Infrastructure -s API -o Data/Migrations
+
+Porneste app:
+    dotnet watch --no-hot-reload
+
+Add changes:
+    git add .
+    git commit -m "seed data 3 + eager loading"
+    git push origin master
