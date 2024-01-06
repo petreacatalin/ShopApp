@@ -17,6 +17,8 @@ builder.Services.AddDbContext<StoreContext>(opt =>
 });
 
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 var app = builder.Build();
 
@@ -35,6 +37,7 @@ using var scope = app.Services.CreateScope();
 var services = scope.ServiceProvider;
 var context = services.GetRequiredService<StoreContext>();
 var logger = services.GetRequiredService<ILogger<Program>>();
+
 try
 {
     await context.Database.MigrateAsync();
@@ -44,4 +47,5 @@ catch (System.Exception ex)
 {
     logger.LogError(ex, "An error occured during migration.");
 }
+
 app.Run();
