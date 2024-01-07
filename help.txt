@@ -6,5 +6,5 @@ Porneste app:
 
 Add changes:
     git add .
-    git commit -m "seed data 3 + eager loading"
-    git push origin master
+    git commit -m "commit message"
+    git push origin main
