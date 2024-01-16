@@ -8,3 +8,18 @@ Add changes:
     git add .
     git commit -m "commit message"
     git push origin main
+
+Help: 
+    ng g --help
+
+Create new module:
+    ng g m core
+
+Create new component:
+    ng g c shop/shop --flat --skip-tests (--dry-run)
+
+Create new service:
+    ng g s shop/shop --skip-tests
+    
+Create routing:
+    ng g m shop/shop-routing --flat
