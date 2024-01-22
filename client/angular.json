@@ -31,12 +31,22 @@
             ],
             "styles": [
               "src/styles.scss",
-              "../client/node_modules/font-awesome/scss/font-awesome.scss"
+              "../client/node_modules/bootswatch/dist/lux/bootstrap.min.css",
+              "../client/node_modules/ngx-toastr/toastr.css",
+              "../client/node_modules/ngx-spinner/animations/timer.css",
+              "../client/node_modules/font-awesome/scss/font-awesome.scss",
+              "../client/node_modules/font-awesome/css/font-awesome.min.css"
             ],
             "scripts": []
           },
           "configurations": {
             "production": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
               "budgets": [
                 {
                   "type": "initial",
