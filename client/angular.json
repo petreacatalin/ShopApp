@@ -20,6 +20,9 @@
             "outputPath": "dist/client",
             "index": "src/index.html",
             "main": "src/main.ts",
+            "allowedCommonJsDependencies": [
+              "cuid"
+            ],
             "polyfills": [
               "zone.js"
             ],
