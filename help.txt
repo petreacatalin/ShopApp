@@ -23,3 +23,6 @@ Create new service:
     
 Create routing:
     ng g m shop/shop-routing --flat
+
+Redis:
+    docker compose up --detach
