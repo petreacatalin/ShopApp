@@ -5,19 +5,19 @@
             <select name="" id="" class="form-select mb-4" (change)="onSortSelected($event)">
                 <option *ngFor="let sort of sortOptions" [value]="sort.value">{{sort.name}}</option>
             </select>
-
             <h5 class="text-warning ms-3">Brands</h5>
             <ul class="list-group my-3">
-                <li class="list-group-item" *ngFor="let brand of brands"
+                <li class="list-group-item" style="cursor: pointer;" *ngFor="let brand of brands"
                     [class.active]="brand.id === shopParams.brandId" (click)="onBrandSelected(brand.id)">
                     {{brand.name}}
                 </li>
             </ul>
             <h5 class="text-warning ms-3">Types</h5>
             <ul class="list-group my-3">
-                <li class="list-group-item" *ngFor="let type of types" [class.active]="type.id === shopParams.typeId"
-                    (click)="onTypeSelected(type.id)">
-                    {{type.name}}</li>
+                <li class="list-group-item" style="cursor: pointer;" *ngFor="let type of types"
+                    [class.active]="type.id === shopParams.typeId" (click)="onTypeSelected(type.id)">
+                    {{type.name}}
+                </li>
             </ul>
         </section>
         <section class="col-9">
