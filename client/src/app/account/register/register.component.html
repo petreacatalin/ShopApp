@@ -1,0 +1,24 @@
+<div class="d-flex justify-content-center mt-5">
+    <div class="col-3">
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+            <div class="text-center mb-4">
+                <h1 class="mb-3"> Sign up </h1>
+                <app-text-inputs [formControl]="registerForm.controls['displayName']"
+                    [label]="'Display name'"></app-text-inputs>
+                <app-text-inputs [formControl]="registerForm.controls['email']"
+                    [label]="'Email address'"></app-text-inputs>
+                <app-text-inputs [formControl]="registerForm.controls['password']" type="password"
+                    [label]="'Password'"></app-text-inputs>
+
+                <ul class="text-danger list-unstyled" *ngIf="errors">
+                    <li>
+                        {{errors}}
+                    </li>
+                </ul>
+                <div class="d-grid" aria-placeholder="Enter your credentials">
+                    <button [disabled]="registerForm.invalid" type="submit" class="btn btn-dark mt-3">Sign up</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

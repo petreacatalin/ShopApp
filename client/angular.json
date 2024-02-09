@@ -38,7 +38,8 @@
               "../client/node_modules/ngx-toastr/toastr.css",
               "../client/node_modules/ngx-spinner/animations/timer.css",
               "../client/node_modules/font-awesome/scss/font-awesome.scss",
-              "../client/node_modules/font-awesome/css/font-awesome.min.css"
+              "../client/node_modules/font-awesome/css/font-awesome.min.css",
+              "../client/node_modules/bootstrap/scss/_dropdown.scss"
             ],
             "scripts": []
           },
@@ -110,6 +111,9 @@
             "assets": [
               "src/favicon.ico",
               "src/assets"
+            ],
+            "styles": [
+              "@angular/material/prebuilt-themes/purple-green.css"
             ]
           }
         }

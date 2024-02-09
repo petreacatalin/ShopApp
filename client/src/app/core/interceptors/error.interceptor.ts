@@ -23,7 +23,7 @@ export class ErrorInterceptor implements HttpInterceptor {
         if (error) {
           if (error.status === 400) {
             if (error.error.errors) {
-              throw error.error
+              throw error.error;
             }
             else {
               this.toastr.error(error.error.message, error.status.toString())
@@ -35,7 +35,7 @@ export class ErrorInterceptor implements HttpInterceptor {
           }
 
           if (error.status === 404) {
-            this.router.navigateByUrl('/not-found')
+            this.router.navigateByUrl('/not-found');
           };
 
           if (error.status === 500) {

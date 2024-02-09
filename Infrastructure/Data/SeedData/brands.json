@@ -1,26 +1,26 @@
 [
   {
     "Id": 1,
-    "Name": "Angular"
+    "Name": "Gigabyte"
   },
   {
     "Id": 2,
-    "Name": "NetCore"
+    "Name": "ASUS"
   },
   {
     "Id": 3,
-    "Name": "VS Code"
+    "Name": "MSI"
   },
   {
     "Id": 4,
-    "Name": "React"
+    "Name": "PowerColor"
   },
   {
     "Id": 5,
-    "Name": "Typescript"
+    "Name": "Sapphire"
   },
   {
     "Id": 6,
-    "Name": "Redis"
+    "Name": "Radeon"
   }
 ]
